@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>3genki</title>
+{% endblock %}
+
+{% block body %}
+<main>
+    <!-- top container: title, name, socials -->
+    <section class="py-3 text-center container">
+        <div class="row py-lg-3">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1>3genki.</h1>
+                <p class="text-muted py-4">
+                    <a class="underline" href="https://www.huion.com/pen_tablet/Inspiroy/H430P.html">huion h430p</a>
+                    //
+                    <a class="underline" href="https://krita.org/en/">krita</a>
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/3genki/" class="mx-1">
+                        <img src="static/icons/instagram.svg" alt="instagram" width="25">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 column picture grid -->
+    <div class="album py-5">
+        <div class="container">
+            <div class="row row-cols-md-3 g-5">
+                <!-- picture elements -->
+                <div class="col">
+                    <a href="/static/ayanokouji.png">
+                        <img src="static/ayanokouji.png" class="shadow rounded-4 img-fluid image-hover" alt="ayanokouji">
+                        <div class="middle">
+                            <div class="text">kiyotaka ayanokouji</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="/static/akane-banashi.png">
+                        <img src="static/akane-banashi.png" class="shadow rounded-4 img-fluid image-hover" alt="akane">
+                        <div class="middle">
+                            <div class="text">osaki akane</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="/static/tsukuyo.png">
+                        <img src="static/tsukuyo.png" class="shadow rounded-4 img-fluid image-hover" alt="tsukuyo">
+                        <div class="middle">
+                            <div class="text">tsukuyo</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="/static/yukinoshita.png">
+                        <img src="static/yukinoshita.png" class="shadow rounded-4 img-fluid image-hover" alt="yukinoshita">
+                        <div class="middle">
+                            <div class="text">yukino yukinoshita</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+{% endblock %}
